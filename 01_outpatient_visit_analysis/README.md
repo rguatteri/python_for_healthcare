@@ -50,8 +50,8 @@ The analysis focuses on multiple areas of interest:
 To this purpose, several Python tools are used:
 - **pandas**: to load and prepare data, and for general data manipulation purposes;
 - **openpyxl** and **zipfile**: to save the dataset to different file formats;
-- **pyreadstats**: to compute descriptive statistics;
-- **matplotlib** and **seaborn**: to visualize results. 
+- **numpy** and **pyreadstats**: to compute descriptive statistics, and for general calculation purposes;
+- **matplotlib** and **seaborn**: to visualize results.
 
 ## Note
 
