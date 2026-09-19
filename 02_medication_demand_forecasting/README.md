@@ -22,8 +22,6 @@ The analysis examines the `demo_pharmacy_sales_data.csv` dataset (available in t
 | `Quantity Sold` | Number of medication units sold in the recorded transaction |
 | `Price` | Recorded price associated with the medication sale |
 
-The table below displays the first five observations in the dataset:
-
 | Date Sold | Med_name | Med_class | Quantity Sold | Price |
 |---|---|---|---:|---:|
 | 07/05/2021 | Clotrimazole Topical Cream (2%) | Antifungal | 66 | 86.9 |
