@@ -1,10 +1,8 @@
 # Public Health Facilities Geospatial Analysis
 
-This project analyses the geographic distribution of hypothetical public health facilities through interactive mapping. It uses facility coordinates and facility-type information to visualise health-service locations and explore patterns that may support service planning and resource allocation.
+This directory documents a geographic distribution analysis I conducted while completing the LinkedIn Learning course [Python Data Analysis for Healthcare](https://www.linkedin.com/learning/python-data-analysis-for-healthcare/python-data-analysis-in-healthcare), taught by Wuraola Oyewusi. The goal of this analysis is to gain insights into health-service locations and explore patterns that may support service planning and resource allocation.
 
-## Environment
-
-The analysis was developed locally with Python, Anaconda, Visual Studio Code, and Jupyter Notebook.
+> ⚠️ Course demonstrations used Google Colab, however, I completed this analysis in **Jupyter Notebook** and a local **`conda`** environment, using **Visual Studio Code** for script development. The reason is, I regard this setup as a valuable tool to have in my skillset (especially when it comes to genomic and bioinformatic workflows) and wanted to acquire expertise in using it.
 
 ## Contents
 
@@ -14,17 +12,13 @@ The analysis was developed locally with Python, Anaconda, Visual Studio Code, an
 
 ## Input Data
 
-The analysis uses `demo_health_facilities_geo_data_NHC.csv`, a course-provided demonstration dataset containing geographic coordinates for hypothetical public health facilities.
+The analysis examines the `demo_health_facilities_geo_data_NHC.csv` dataset (available in the [`exercise_files`](../exercise_files/) working directory), a demonstration dataset storing geographic coordinates for hypothetical public health facilities. This dataset stores facility coordinates and facility-type information about **767 public health facilities**. The tables below record its structure and representative first five entries, respectively.
 
 | Column | Description |
 |---|---|
-| `Facility Type` | Category of the public health facility |
+| `Facility Type` | Category of the public health facility (Hospital, Primary Care Center, Specialized Healthcare Center, and Pharmacy) |
 | `Latitude` | Geographic latitude coordinate of the facility location |
 | `Longitude` | Geographic longitude coordinate of the facility location |
-
-The dataset includes four facility categories: Hospital, Primary Care Center, Specialized Healthcare Center, and Pharmacy.
-
-The table below displays the first five observations in the dataset:
 
 | Facility Type | Latitude | Longitude |
 |---|---:|---:|
@@ -36,13 +30,12 @@ The table below displays the first five observations in the dataset:
 
 ## Analysis and Tools
 
-- Loaded and inspected geographic facility data with **pandas**.
-- Identified the distinct categories of public health facilities included in the dataset.
-- Created interactive maps with **Folium** and plotted facility locations using markers coloured by facility type.
-- Filtered the dataset to visualise selected facility categories, such as hospitals and pharmacies.
-- Created a heat map to explore the spatial concentration of facilities.
-- Applied marker clustering to improve the readability of maps containing many facility locations.
+The analysis focuses on visualizing the geospatial location of public health facilities by creating different types of interactive maps. To this purpose, the following Python tools are used:
+- **pandas**: to load and prepare data, and for general data manipulation purposes;
+- **matplotlib**: to visualize the count of distinct categories of public health facilities, and for general visualization purposes;
+- **geopandas**: to handle and visualize geospatial data;
+- **folium**: to plot facility locations and create different types of interactive maps (e.g., filtered by selected facility categories, or heatmaps to explore their spatial concentration).
 
-**Libraries:** pandas and Folium.
+## Note
 
-> **Note:** This is an educational project completed as part of the *Python Data Analysis for Healthcare* course by Wuraola Oyewusi on LinkedIn Learning. The dataset is a demonstration dataset supplied with the course. The facilities and geographic locations are hypothetical and do not represent real healthcare facilities.
+This is an educational project completed as part of the LinkedIn Learning course [Python Data Analysis for Healthcare](https://www.linkedin.com/learning/python-data-analysis-for-healthcare/python-data-analysis-in-healthcare), taught by Wuraola Oyewusi. The dataset is a demonstration dataset supplied with the course and is not real patient data.
