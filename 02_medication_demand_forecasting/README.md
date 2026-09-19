@@ -1,20 +1,18 @@
 # Medication Demand Forecasting
 
-This project analyses historical pharmacy-sales data and applies time-series forecasting to estimate future medication demand. Forecasting medication demand can support inventory planning and help reduce the risk of stock shortages or overstocking.
+This directory documents a medication demand forecasting analysis I conducted while completing the LinkedIn Learning course [Python Data Analysis for Healthcare](https://www.linkedin.com/learning/python-data-analysis-for-healthcare/python-data-analysis-in-healthcare), taught by Wuraola Oyewusi. The goal of this analysis is to gain insights into historical pharmacy sales data and estimate future medication demand by applying time-series forecasting. Most notably, forecasting medication demand can support inventory planning and help reduce the risk of stock shortages or overstocking.
 
-## Environment
-
-The analysis was developed locally with Python, Anaconda, Visual Studio Code, and Jupyter Notebook.
+> ⚠️ Course demonstrations used Google Colab, however, I completed this analysis in **Jupyter Notebook** and a local **`conda`** environment, using **Visual Studio Code** for script development. The reason is, I regard this setup as a valuable tool to have in my skillset (especially when it comes to genomic and bioinformatic workflows) and wanted to acquire expertise in using it.
 
 ## Contents
 
 | File | Description |
 |---|---|
-| `02_medication_demand_forecasting.ipynb` | Jupyter Notebook containing data preparation, exploratory analysis, and medication-demand forecasting. |
+| `02_medication_demand_forecasting.ipynb` | Jupyter Notebook containing the complete analysis. |
 
 ## Input Data
 
-The analysis uses `demo_pharmacy_sales_data.csv`, a course-provided demonstration dataset containing pharmacy-sale records.
+The analysis examines the `demo_pharmacy_sales_data.csv` dataset (available in the [`exercise_files`](../exercise_files/) working directory), a demonstration dataset storing medication class and sales data of an hypothetical pharmacy. This dataset stores information about **1 million pharmacy-sale records**. The tables below record its structure and representative first five entries, respectively.
 
 | Column | Description |
 |---|---|
@@ -36,12 +34,16 @@ The table below displays the first five observations in the dataset:
 
 ## Analysis and Tools
 
-- Loaded, inspected, and prepared pharmacy sales data with **pandas**.
-- Explored medication sales and demand patterns over time through data visualisation.
-- Reshaped historical sales data into a time-series format suitable for forecasting.
-- Applied **Prophet** to generate a forecast of future medication demand.
-- Visualised forecasted demand and its uncertainty intervals.
+The analysis focuses on the following areas of interest:
+- Medication Class Frequency
+- Medication Demand Forecasting
 
-**Libraries:** pandas, matplotlib, seaborn, and Prophet.
+To this purpose, the following Python tools are used:
+- **pandas**: to load and prepare data, and for general data manipulation purposes;
+- **matplotlib**, **seaborn**, and **WordCloud**: to explore medication sales and demand patterns over time through data visualisation (WordCloud is specifically used to create word clouds);
+- **numpy**: for general calculation purposes;
+- **Prophet**: to conduct the medication demand forecasting analysis.
 
-> **Note:** This is an educational project completed as part of the *Python Data Analysis for Healthcare* course by Wuraola Oyewusi on LinkedIn Learning. The dataset is a demonstration dataset supplied with the course and is not real patient data.
+## Note
+
+This is an educational project completed as part of the LinkedIn Learning course [Python Data Analysis for Healthcare](https://www.linkedin.com/learning/python-data-analysis-for-healthcare/python-data-analysis-in-healthcare), taught by Wuraola Oyewusi. The dataset is a demonstration dataset supplied with the course and is not real patient data.
