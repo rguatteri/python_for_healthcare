@@ -1,20 +1,18 @@
 # Patient Experience Analytics
 
-This project analyses patient-experience feedback collected by a hypothetical laboratory. It explores how staff ratings, speed ratings, waiting times, test types, and free-text reviews can be used to understand patient satisfaction and identify potential areas for service improvement.
+This directory documents a patient experience analysis I conducted while completing the LinkedIn Learning course [Python Data Analysis for Healthcare](https://www.linkedin.com/learning/python-data-analysis-for-healthcare/python-data-analysis-in-healthcare), taught by Wuraola Oyewusi. The goal of this analysis is to gain insights into patient-experience feedback and explore staff ratings, speed ratings, waiting times, test types, and free-text reviews. Most notably, these variables can support the understanding of patient satisfaction and the identification of potential areas for service improvement
 
-## Environment
-
-The analysis was developed locally with Python, Anaconda, Visual Studio Code, and Jupyter Notebook.
+> ⚠️ Course demonstrations used Google Colab, however, I completed this analysis in **Jupyter Notebook** and a local **`conda`** environment, using **Visual Studio Code** for script development. The reason is, I regard this setup as a valuable tool to have in my skillset (especially when it comes to genomic and bioinformatic workflows) and wanted to acquire expertise in using it.
 
 ## Contents
 
 | File | Description |
 |---|---|
-| `03_patient_experience_analytics.ipynb` | Jupyter Notebook containing exploratory analysis, interactive visualisations, and sentiment analysis of patient-experience feedback. |
+| `03_patient_experience_analytics.ipynb` | Jupyter Notebook containing the complete analysis. |
 
 ## Input Data
 
-The analysis uses `demo_patient_experience_data_NHC.csv`, a course-provided demonstration dataset containing feedback records from a hypothetical laboratory.
+The analysis examines the `demo_patient_experience_data_NHC.csv` dataset (available in the [`exercise_files`](../exercise_files/) working directory), a demonstration dataset storing feedback records from a hypothetical laboratory. This dataset stores information about **20000 feedback records**. The tables below record its structure and representative first five entries, respectively (in the latter, reviews have been shortened for readability).
 
 | Column | Description |
 |---|---|
@@ -27,10 +25,6 @@ The analysis uses `demo_patient_experience_data_NHC.csv`, a course-provided demo
 | `Test Type` | Type of laboratory test received by the patient |
 | `Review` | Free-text patient feedback describing their experience |
 
-> **Note:** The source file also contains an `Unnamed: 0` column, which represents a saved row index rather than a meaningful analytical variable.
-
-The table below displays the first five observations in the dataset. Reviews have been shortened for readability.
-
 | Entry Code | Feedback Date | Patient Age | Staff Rating | Speed Rating | Wait Time (minutes) | Test Type | Review |
 |---:|---|---:|---:|---:|---:|---|---|
 | 1 | 2022-10-22 | 61 | 5 | 3 | 29 | Urine Test | “I couldn't have asked for better service from the staff, it was top-notch...” |
@@ -39,15 +33,19 @@ The table below displays the first five observations in the dataset. Reviews hav
 | 4 | 2022-03-15 | 34 | 4 | 3 | 67 | Ultrasound | “The staff was decent, but there were minor areas that could be better...” |
 | 5 | 2022-12-13 | 28 | 1 | 1 | 45 | CT Scan | “The service was abysmal, and I'm extremely unsatisfied...” |
 
+> The source file also contains an `Unnamed: 0` column, which represents a saved row index rather than a meaningful analytical variable.
+
 ## Analysis and Tools
 
-- Loaded, inspected, and prepared patient-experience data with **pandas**.
-- Explored the distributions of staff ratings, speed ratings, waiting times, patient ages, and laboratory test types.
-- Created interactive visualisations with **Plotly** to examine patterns and relationships in the feedback data.
-- Applied **TextBlob** sentiment analysis to the free-text patient reviews.
-- Categorised review sentiment as positive, neutral, or negative to support interpretation of patient feedback.
-- Visualised sentiment patterns to identify opportunities for improving patient experience and service quality.
+The analysis focuses on the following areas of interest:
+- Laboratory Patient Experience
+- Sentiment Analysis of Patient Experience Reviews
 
-**Libraries:** pandas, matplotlib, Plotly, and TextBlob.
+To this purpose, the following Python tools are used:
+- **pandas**: to load and prepare data, and for general data manipulation purposes;
+- **matplotlib** and **plotly**: to explore patient experience and sentiment through data visualisation (plotly is specifically used to create interactive visualizations);
+- **TextBlob**: to analyze free-text patient reviews and categorise their sentiment as positive, negative, or neutral.
 
-> **Note:** This is an educational project completed as part of the *Python Data Analysis for Healthcare* course by Wuraola Oyewusi on LinkedIn Learning. The dataset is a demonstration dataset supplied with the course and is not real patient data.
+## Note
+
+This is an educational project completed as part of the LinkedIn Learning course [Python Data Analysis for Healthcare](https://www.linkedin.com/learning/python-data-analysis-for-healthcare/python-data-analysis-in-healthcare), taught by Wuraola Oyewusi. The dataset is a demonstration dataset supplied with the course and is not real patient data.
