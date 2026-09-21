@@ -9,18 +9,9 @@ This repository contains Jupyter Notebook implementations of a collection of pro
 
 > ⚠️ **Development Environment** Although course demonstrations used Google Colab, I completed this analysis locally in **Jupyter Notebook**, using a project-specific **`conda`** environment and **Visual Studio Code** for script development. I used this environment to acquire hands-on expertise with tools relevant to future genomics and bioinformatics workflows. Further details about how I set up this development environment are provided below.
 
+## Background
 
-## Learning Objectives (BACKGROUND?)
-
-The course focused on applying Python to common healthcare-data tasks, including:
-
-- Understanding the role of clinical, administrative, operational, public-health, and pharmacy data in healthcare decision-making.
-- Preparing datasets for analysis by identifying and addressing common problems related to data quality, cleanliness, and structure.
-- Exploring relationships between variables through descriptive analysis, correlations, and visualisations.
-- Applying text-based sentiment analysis to patient-experience reviews.
-- Developing reusable functions and scripts to automate repetitive analytical tasks.
-- Applying time-series analysis and forecasting to support healthcare-resource and medication-demand planning.
-
+The course first provides essential knowledge concerning the role of clinical, administrative, operational, public-health, and pharmacy data in healthcare decision-making. Building on this, the trainee is instructed on how to apply Python to common healthcare-data issues, while developing reusable functions and scripts to automate repetitive analytical tasks. By cleaning, transforming, and analysing healthcare-related data, one can extract insights on patterns and correlation between different variables, with the ultimate goal of supporting healthcare decisions.
 
 ## Repository Contents
 
@@ -59,7 +50,7 @@ The folder-level documentation provides the most detailed information about proj
 
 ## Development Environment
 
-Before beginning this project, I had previously used a standard Python installation through Git Bash. I then set up a dedicated local data-analysis environment based on **Anaconda**, **Visual Studio Code**, and **Jupyter Notebook**.
+Before beginning this project, I had previously used a standard Python installation through Git Bash. I then set up a dedicated local data analysis environment based on **Anaconda**, **Visual Studio Code**, and **Jupyter Notebook**.
 
 - Performed a clean Anaconda reinstallation on Windows, removing remnants of the previous installation first to avoid obsolete shortcuts, PATH conflicts, and environment-configuration issues.
 - Installed the official **Python** extension for Visual Studio Code.
@@ -77,12 +68,4 @@ This local setup was chosen to develop practical experience with conda environme
 
 ## Note
 
-All projects documented in this repository are educational projects completed as part of the LinkedIn Learning course [Python Data Analysis for Healthcare](https://www.linkedin.com/learning/python-data-analysis-for-healthcare/python-data-analysis-in-healthcare), taught by Wuraola Oyewusi. All datasets are demonstration datasets supplied with the course and do not contain real patient data.
-
-## Acknowledgements
-
-- Course: [Python Data Analysis for Healthcare](https://www.linkedin.com/learning/python-data-analysis-for-healthcare)
-- Instructor: [Wuraola Oyewusi](https://www.linkedin.com/learning/instructors/wuraola-oyewusi)
-- Platform: LinkedIn Learning
-
-The project notebooks are based on course demonstrations and have been organised, documented, and—in the healthcare data-wrangling project—extended to support my own learning and portfolio development.
+All projects documented in this repository are educational projects completed as part of the LinkedIn Learning course [Python Data Analysis for Healthcare](https://www.linkedin.com/learning/python-data-analysis-for-healthcare/python-data-analysis-in-healthcare), taught by Wuraola Oyewusi. All notebooks are based on course demonstrations and have been organised, documented, and sometimes extended to support my own learning and portfolio development. All datasets are demonstration datasets supplied with the course and do not contain real patient data.
