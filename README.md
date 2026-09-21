@@ -1,30 +1,25 @@
 # Python Data Analysis for Healthcare
 
-This repository contains Jupyter Notebook implementations of a collection of projects from the LinkedIn Learning course [Python Data Analysis for Healthcare](https://www.linkedin.com/learning/python-data-analysis-for-healthcare), taught by Wuraola Oyewusi. The project applies Python to a healthcare analytics scenario: transforming clinical data into actionable insights that can support resource allocation, service delivery, and patient care.
+This repository contains Jupyter Notebook implementations of a collection of projects from the LinkedIn Learning course [Python Data Analysis for Healthcare](https://www.linkedin.com/learning/python-data-analysis-for-healthcare), taught by Wuraola Oyewusi. The project applies Python to a healthcare analytics scenario, covering multiple tasks:
+- Exploratory Data Analysis (EDA) of Outpatient Visits
+- Time-Series Forecasting of Medication Demand
+- Sentiment Analysis of Patient Experience
+- Geospatial Mapping of Public Health Facilities
+- Data Wrangling
 
-
-This repository documents hands-on work with healthcare-related demonstration datasets, covering exploratory data analysis, visualisation, time-series forecasting, geospatial mapping, text-based sentiment analysis, and data wrangling. Each working folder contains a dedicated README with project-specific context, input-data documentation, workflow details, and results.
-
-> **Note:** All datasets used in this repository are course-provided demonstration data. They are educational in nature and do not contain real patient-level information.
-
-
-> **Development environment:** Although the course demonstrations used Google Colab, I completed this analysis locally in **Jupyter Notebook**, using a project-specific **`conda`** environment and **Visual Studio Code** for script development. I chose this workflow to develop practical experience with tools relevant to future genomic and bioinformatics workflows.
-
-> **Development environment:** Course demonstrations used Google Colab; this analysis was completed locally in **Jupyter Notebook**, using a project-specific **`conda`** environment and **Visual Studio Code**. This workflow was chosen to build practical experience relevant to genomic and bioinformatics analysis.
-
-> ⚠️ Course demonstrations used Google Colab, however, I completed this analysis in **Jupyter Notebook** and a local **`conda`** environment, using **Visual Studio Code** for script development. The reason is, I regard this setup as a valuable tool to have in my skillset (especially when it comes to genomic and bioinformatic workflows) and wanted to acquire expertise in using it.
-
-
+> ⚠️ **Development Environment** Although course demonstrations used Google Colab, I completed this analysis locally in **Jupyter Notebook**, using a project-specific **`conda`** environment and **Visual Studio Code** for script development. I used this environment to acquire hands-on expertise with tools relevant to future genomics and bioinformatics workflows.
 
 ## Repository Contents
 
-| Folder | Project | Summary |
+| Directory | Project | Description |
 |---|---|---|
 | [`01_outpatient_visit_analysis`](01_outpatient_visit_analysis/README.md) | Outpatient Visit Analysis | Examines patient flow and waiting-time patterns across registration, nursing, laboratory, consultation, and pharmacy stages. |
 | [`02_medication_demand_forecasting`](02_medication_demand_forecasting/README.md) | Medication Demand Forecasting | Uses historical pharmacy sales data and time-series forecasting to estimate future medication demand. |
 | [`03_patient_experience_analytics`](03_patient_experience_analytics/README.md) | Patient Experience Analytics | Explores laboratory patient feedback through ratings, waiting times, interactive visualisations, and sentiment analysis of written reviews. |
 | [`04_public_health_facilities_geospatial_analysis`](04_public_health_facilities_geospatial_analysis/README.md) | Public Health Facilities Geospatial Analysis | Maps the geographic distribution of hypothetical health facilities and explores facility-density patterns. |
 | [`05_healthcare_data_wrangling`](05_healthcare_data_wrangling/README.md) | Healthcare Data Wrangling | Converts unstructured generic-medication records into structured datasets and compares the original course workflow with an improved implementation. |
+
+> Each working folder contains a dedicated README with project-specific context, input-data documentation, workflow details, and results.
 
 ## Learning Objectives
 
@@ -91,6 +86,10 @@ The `05_healthcare_data_wrangling` folder contains two notebooks:
 
 - `05_original_healthcare_data_wrangling.ipynb` reproduces the course-based workflow.
 - `05_healthcare_data_wrangling.ipynb` presents an improved version that standardises whitespace and separates medication names from dosage information.
+
+## Note
+
+All projects documented in this repository are educational projects completed as part of the LinkedIn Learning course [Python Data Analysis for Healthcare](https://www.linkedin.com/learning/python-data-analysis-for-healthcare/python-data-analysis-in-healthcare), taught by Wuraola Oyewusi. All datasets are demonstration datasets supplied with the course and do not contain real patient data.
 
 ## Acknowledgements
 
